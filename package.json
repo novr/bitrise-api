@@ -1,0 +1,19 @@
+{
+  "name": "bitrise-api",
+  "version": "0.0.1",
+  "description": "REST API for Bitrise.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novr/bitrise-api.git"
+  },
+  "author": "novr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/novr/bitrise-api/issues"
+  },
+  "homepage": "https://github.com/novr/bitrise-api#readme"
+}

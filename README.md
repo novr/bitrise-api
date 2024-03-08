@@ -10,25 +10,6 @@ npm install @novr/bitrise-api
 
 ## Usage
 
-### Initializing the Client
-
-```typescript
-import { BitriseApiClient } from '@novr/bitrise-api'
-
-const apiClient = new BitriseApiClient()
-```
-
-### Making API Requests
-
-```typescript
-try {
-  const response = await apiClient.someApiEndpoint(parameters)
-  console.log(response.data)
-} catch (error) {
-  console.error('Error making API request:', error)
-}
-```
-
 ### Configuration
 
 The client can be configured by providing an instance of Configuration during initialization:
@@ -41,8 +22,24 @@ const config = new Configuration({
   apiKey: 'your-api-key', // API key for authentication
   // Add any other configuration options as needed
 })
+```
 
-const apiClient = new BitriseApiClient(config)
+### Use the API
+
+```typescript
+import {
+  BuildsApi,
+} from '@novr/bitrise-api'
+
+// Making API Requests
+
+try {
+  const buildsApi = new BuildsApi(config)
+  const response = await buildsApi.buildListAll()
+  console.log(response.data)
+} catch (error) {
+  console.error('Error buildListAll API request:', error)
+}
 ```
 
 ## Examples

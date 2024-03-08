@@ -1,6 +1,6 @@
 {
   "name": "@novr/bitrise-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "REST API for Bitrise.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "prepare": "npm run build",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "generate-client": "openapi-generator-cli generate -i https://api-docs.bitrise.io/docs/swagger.json -g typescript-fetch -o lib"
+    "generate-client": "openapi-generator-cli generate -i https://api-docs.bitrise.io/docs/swagger.json -g typescript-fetch -o src/lib"
   },
   "repository": "git+https://github.com/novr/bitrise-api.git",
   "author": "novr <nobuhisa.komiya@gmail.com>",

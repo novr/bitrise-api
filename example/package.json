@@ -2,7 +2,7 @@
   "name": "example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "example.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@novr/bitrise-api": "^0.1.0"
+    "@novr/bitrise-api": "^0.1.2",
+    "dotenv": "^16.4.5"
   }
 }

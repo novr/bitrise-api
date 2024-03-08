@@ -1,19 +1,35 @@
 {
   "name": "bitrise-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "REST API for Bitrise.io",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "generate-client": "openapi-generator-cli generate -i https://api-docs.bitrise.io/docs/swagger.json -g typescript-fetch -o lib"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/novr/bitrise-api.git"
-  },
-  "author": "novr",
+  "repository": "git+https://github.com/novr/bitrise-api.git",
+  "author": "novr <nobuhisa.komiya@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/novr/bitrise-api/issues"
   },
-  "homepage": "https://github.com/novr/bitrise-api#readme"
+  "homepage": "https://github.com/novr/bitrise-api#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.11.0",
+    "chai": "^5.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "mocha": "^10.3.0",
+    "nyc": "^15.1.0",
+    "prettier": "^3.2.5",
+    "sinon": "^17.0.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
 }

@@ -9,7 +9,7 @@
     "prepare": "npm run build",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "generate-client": "openapi-generator-cli generate -i https://api-docs.bitrise.io/docs/swagger.json -g typescript-fetch -o src/lib"
+    "generate-client": "openapi-generator-cli generate -i swagger.json -g typescript-fetch -o src/lib"
   },
   "repository": "git+https://github.com/novr/bitrise-api.git",
   "author": "novr <nobuhisa.komiya@gmail.com>",

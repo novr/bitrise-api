@@ -1,10 +1,7 @@
 // example.ts
 import 'dotenv/config'
 
-import {
-  Configuration,
-  BuildsApi,
-} from '@novr/bitrise-api'
+import { Configuration, BuildsApi } from '@novr/bitrise-api'
 
 async function runExample() {
   // Set up the API client with your configuration

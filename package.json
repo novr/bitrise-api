@@ -1,15 +1,15 @@
 {
   "name": "@novr/bitrise-api",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "REST API for Bitrise.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "generate-client": "openapi-generator-cli generate -i swagger.json -g typescript-fetch -o src/lib",
     "build": "tsc",
     "prepare": "npm run build",
     "lint": "eslint .",
-    "format": "prettier --write .",
-    "generate-client": "openapi-generator-cli generate -i swagger.json -g typescript-fetch -o src/lib"
+    "format": "prettier --write ."
   },
   "repository": "git+https://github.com/novr/bitrise-api.git",
   "author": "novr <nobuhisa.komiya@gmail.com>",

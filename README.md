@@ -27,9 +27,7 @@ const config = new Configuration({
 ### Use the API
 
 ```typescript
-import {
-  BuildsApi,
-} from '@novr/bitrise-api'
+import { BuildsApi } from '@novr/bitrise-api'
 
 // Making API Requests
 

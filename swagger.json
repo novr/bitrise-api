@@ -6320,13 +6320,13 @@
           "type": "string"
         },
         "description": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "event_icon": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "event_stype": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "repository_avatar_icon_url": {
           "type": "string"
@@ -6338,10 +6338,10 @@
           "type": "string"
         },
         "target_path_string": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "title": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         }
       }
     },
@@ -6349,7 +6349,7 @@
       "type": "object",
       "properties": {
         "icon": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "plan": {
           "$ref": "#/definitions/addons.Plan"
@@ -6604,7 +6604,7 @@
       "type": "object",
       "properties": {
         "avatar_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "is_disabled": {
           "type": "boolean"
@@ -6619,19 +6619,19 @@
           "$ref": "#/definitions/v0.OwnerAccountResponseModel"
         },
         "project_type": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "provider": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "repo_owner": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "repo_slug": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "repo_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "slug": {
           "type": "string"
@@ -7098,7 +7098,7 @@
           }
         },
         "artifact_type": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "file_size_bytes": {
           "type": "integer"
@@ -7116,7 +7116,7 @@
           "type": "string"
         },
         "title": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         }
       }
     },
@@ -7149,7 +7149,7 @@
           }
         },
         "artifact_type": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "expiring_download_url": {
           "type": "string"
@@ -7173,7 +7173,7 @@
           "type": "string"
         },
         "title": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         }
       }
     },
@@ -7347,25 +7347,25 @@
       "type": "object",
       "properties": {
         "abort_reason": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "build_number": {
           "type": "integer"
         },
         "commit_hash": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "commit_message": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "commit_view_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "credit_cost": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         },
         "environment_prepare_finished_at": {
           "type": "string"
@@ -7380,7 +7380,7 @@
           "type": "boolean"
         },
         "machine_type_id": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "original_build_params": {
           "type": "array",
@@ -7392,10 +7392,10 @@
           "type": "integer"
         },
         "pull_request_target_branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "pull_request_view_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "repository": {
           "$ref": "#/definitions/v0.AppResponseItemModel"
@@ -7404,7 +7404,7 @@
           "type": "string"
         },
         "stack_identifier": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "started_on_worker_at": {
           "type": "string"
@@ -7416,13 +7416,13 @@
           "type": "string"
         },
         "tag": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_at": {
           "type": "string"
         },
         "triggered_by": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_workflow": {
           "type": "string"
@@ -7533,25 +7533,25 @@
       "type": "object",
       "properties": {
         "abort_reason": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "build_number": {
           "type": "integer"
         },
         "commit_hash": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "commit_message": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "commit_view_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "credit_cost": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         },
         "environment_prepare_finished_at": {
           "type": "string"
@@ -7572,7 +7572,7 @@
           "type": "string"
         },
         "machine_type_id": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "original_build_params": {
           "type": "array",
@@ -7587,10 +7587,10 @@
           "type": "integer"
         },
         "pull_request_target_branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "pull_request_view_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "rebuildable": {
           "type": "boolean"
@@ -7599,7 +7599,7 @@
           "type": "string"
         },
         "stack_identifier": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "started_on_worker_at": {
           "type": "string"
@@ -7611,13 +7611,13 @@
           "type": "string"
         },
         "tag": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_at": {
           "type": "string"
         },
         "triggered_by": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_workflow": {
           "type": "string"
@@ -7859,7 +7859,7 @@
       "type": "object",
       "properties": {
         "avatar_icon_url": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "concurrency_count": {
           "type": "integer"
@@ -8048,19 +8048,19 @@
       "type": "object",
       "properties": {
         "branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "build_number": {
           "type": "integer"
         },
         "commit_hash": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "commit_message": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "credit_cost": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         },
         "finished_at": {
           "type": "string"
@@ -8078,7 +8078,7 @@
           "type": "integer"
         },
         "pull_request_target_branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "repository": {
           "$ref": "#/definitions/v0.AppResponseItemModel"
@@ -8093,13 +8093,13 @@
           "type": "integer"
         },
         "tag": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_at": {
           "type": "string"
         },
         "triggered_by": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_workflow": {
           "type": "string"
@@ -8130,7 +8130,7 @@
           }
         },
         "branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "build_number": {
           "type": "integer"
@@ -8142,13 +8142,13 @@
           }
         },
         "commit_hash": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "commit_message": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "credit_cost": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         },
         "finished_at": {
           "type": "string"
@@ -8169,7 +8169,7 @@
           "type": "integer"
         },
         "pull_request_target_branch": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "rebuildable": {
           "type": "boolean"
@@ -8184,7 +8184,7 @@
           "type": "integer"
         },
         "tag": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "trigger_params": {
           "$ref": "#/definitions/pipelineabledomain.TriggerParams"
@@ -8193,7 +8193,7 @@
           "type": "string"
         },
         "triggered_by": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "triggered_workflow": {
           "type": "string"
@@ -8444,7 +8444,7 @@
           "type": "string"
         },
         "price": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         }
       }
     },
@@ -8888,16 +8888,16 @@
           "type": "string"
         },
         "response_body": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "response_headers": {
-          "$ref": "#/definitions/nulls.String"
+          "type": "string"
         },
         "response_http_status": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         },
         "response_seconds": {
-          "$ref": "#/definitions/nulls.Int64"
+          "type": "integer"
         },
         "slug": {
           "type": "string"

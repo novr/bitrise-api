@@ -1,6 +1,6 @@
 {
   "name": "@novr/bitrise-api",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "REST API for Bitrise.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -12,8 +12,7 @@
   ],
   "scripts": {
     "generate-client": "openapi-generator-cli generate -i swagger.json -g typescript-fetch -o src/lib",
-    "prebuild": "yarn run generate-client",
-    "build": "tsc",
+    "build": "yarn run generate-client && tsc",
     "prepare": "yarn run build",
     "lint": "eslint .",
     "format": "prettier --write ."

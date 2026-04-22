@@ -5,6 +5,11 @@
   "description": "REST API for Bitrise.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "generate-client": "openapi-generator-cli generate -i swagger.json -g typescript-fetch -o src/lib",
     "prebuild": "yarn run generate-client",

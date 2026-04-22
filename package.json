@@ -18,7 +18,10 @@
     "lint": "eslint .",
     "format": "prettier --write ."
   },
-  "repository": "git+https://github.com/novr/bitrise-api.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novr/bitrise-api.git"
+  },
   "author": "novr <nobuhisa.komiya@gmail.com>",
   "license": "MIT",
   "publishConfig": {

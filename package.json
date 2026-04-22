@@ -1,6 +1,6 @@
 {
   "name": "@novr/bitrise-api",
-  "version": "0.1.5",
+  "version": "0.2.1",
   "packageManager": "yarn@4.14.1",
   "description": "REST API for Bitrise.io",
   "main": "dist/index.js",

@@ -12,33 +12,35 @@ npm install @novr/bitrise-api
 
 ### Configuration
 
-The client can be configured by providing an instance of Configuration during initialization:
+Create a `Configuration` instance and pass it to the generated API classes (for example `BuildsApi`). Each API class extends `BaseAPI` and uses that configuration for base URL, `fetch`, and authentication.
 
 ```typescript
-import { Configuration, BitriseApiClient } from '@novr/bitrise-api'
+import { Configuration, BuildsApi } from '@novr/bitrise-api'
 
 const config = new Configuration({
-  basePath: 'https://api.bitrise.io/v0.1', // API base URL
-  apiKey: 'your-api-key', // API key for authentication
-  // Add any other configuration options as needed
+  basePath: 'https://api.bitrise.io/v0.1',
+  apiKey: 'YOUR_PERSONAL_ACCESS_TOKEN',
 })
 ```
+
+The Bitrise OpenAPI spec uses the `Authorization` header for the personal access token; the generated client wires `apiKey` to that header.
 
 ### Use the API
 
 ```typescript
 import { BuildsApi } from '@novr/bitrise-api'
 
-// Making API Requests
+const buildsApi = new BuildsApi(config)
 
 try {
-  const buildsApi = new BuildsApi(config)
-  const response = await buildsApi.buildListAll()
-  console.log(response.data)
+  const result = await buildsApi.buildListAll({})
+  console.log(result)
 } catch (error) {
-  console.error('Error buildListAll API request:', error)
+  console.error('buildListAll failed:', error)
 }
 ```
+
+`typescript-fetch` methods such as `buildListAll` return the parsed model (`Promise<V0BuildListAllResponseModel>` here), not an Axios-style `{ data }` wrapper. Use `*Raw` variants if you need the `Response` object.
 
 ## Examples
 
